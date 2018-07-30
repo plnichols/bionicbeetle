@@ -7,7 +7,6 @@ Here's some information on how to perform common tasks:
 - [npm start](#npm-start) *(start dev environment with live reloading)*
 - [npm test](#npm-test) *(run jest test suite)*
 - [npm run build](#npm-run-build) *(build the app for production in `build` folder)*
-- [npm run deploy](#npm-run-deploy) *(deploy to github pages)*
 
 You can find the most recent version of the Create React App guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
