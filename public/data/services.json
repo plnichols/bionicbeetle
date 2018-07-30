@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "icon": "code",
+      "name": "Development",
+      "description": "Front end development for websites and web applications. Clean, semantic and accessible HTML markup which enforces code re-use across dev team"
+    },
+    {
+      "icon": "mobile",
+      "name": "Responsive UI",
+      "description": "Mobile-first, user-friendly and responsive UI development using progressive enhancement and graceful degradation techniques with a focus on performance"
+    },
+    {
+      "icon": "javascript",
+      "name": "Javascript / ES6",
+      "description": "Modern Javascript development using latest ES6 features and following industry best practices such as DRY, modular, KISS, object oriented"
+    },
+    {
+      "icon": "css",
+      "name": "CSS3",
+      "description": "Architecture of scalable and maintainable CSS framework and pattern library, using BEM as the foundation for projects of any size"
+    },
+    {
+      "icon": "react",
+      "name": "React",
+      "description": "Development of React applications and shared UI components libraries built using React and Styled-Components"
+    },
+    {
+      "icon": "webpack",
+      "name": "Webpack",
+      "description": "Setup configurations for development and production build scripts in order to import, bundle, minify all assets"
+    }
+  ]
+}

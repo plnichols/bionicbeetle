@@ -1,0 +1,40 @@
+{
+  "name": "bionicbeetle",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://bionicbeetle.com",
+  "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "polished": "^1.9.3",
+    "prettier": "^1.13.7",
+    "react": "^16.4.1",
+    "react-app-rewire-styled-components": "^3.0.2",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "styled-components": "^3.3.3",
+    "styled-normalize": "^8.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^3.1.1",
+    "react-app-rewired": "^1.5.2",
+    "react-scripts": "1.1.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --write ",
+      "git add"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "(.*)$": "<rootDir>/src/$1"
+    }
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom"
+  }
+}
