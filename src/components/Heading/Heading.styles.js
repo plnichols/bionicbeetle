@@ -10,66 +10,66 @@ const BaseHeading = styled.span`
   color: ${color.text};
 `;
 
-const H1Styled = BaseHeading.withComponent('h1').extend`
+const H1Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '9vw'};
-  
+
   ${media.up.sm`
     font-size: 5.5rem;
   `};
 `;
 
-const H2Styled = BaseHeading.withComponent('h2').extend`
+const H2Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '6.5vw'};
   margin-bottom: 1rem;
-  
+
   ${media.up.sm`
     font-size: 4rem;
   `};
 `;
 
-const H3Styled = BaseHeading.withComponent('h3').extend`
+const H3Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '5vw'};
   font-weight: 100;
   margin-bottom: 1rem;
   letter-spacing: -0.5px;
   color: ${color.grey.dark};
-  
+
   ${media.up.sm`
     font-size: 3rem;
   `};
 `;
 
-const H4Styled = BaseHeading.withComponent('h4').extend`
+const H4Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '4vw'};
   font-weight: 100;
   margin-bottom: 1rem;
   letter-spacing: -0.3px;
   color: ${color.grey.dark};
-  
+
   ${media.up.sm`
     font-size: 2.5rem;
   `};
 `;
 
-const H5Styled = BaseHeading.withComponent('h5').extend`
+const H5Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '3.5vw'};
   font-weight: 100;
   margin-bottom: 1.25rem;
   letter-spacing: -0.3px;
   color: ${color.grey.dark};
-  
+
   ${media.up.sm`
     font-size: 2rem;
   `};
 `;
 
-const H6Styled = BaseHeading.withComponent('h6').extend`
+const H6Styled = styled(BaseHeading)`
   font-size: ${props => props.size || '3vw'};
   font-weight: 100;
   margin-bottom: 1.25rem;
   letter-spacing: -0.3px;
   color: ${color.grey.dark};
-  
+
   ${media.up.sm`
     font-size: 1.5rem;
   `};

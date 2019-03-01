@@ -12,7 +12,7 @@ const ListStyled = styled.ul`
   }
 `;
 
-const OrderedListStyled = ListStyled.extend`
+const OrderedListStyled = styled(ListStyled)`
   list-style: decimal inside;
 `;
 

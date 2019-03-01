@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Box, Button, Content, Divider, Footer, Heading, Logo, Services } from 'components';
+import { Box, Button, Content, Divider, Footer, Heading, Logo, Services, GlobalStyles } from 'components';
 import { AppStyled } from './App.styles';
 
 class App extends Component {
   render() {
     return (
       <AppStyled>
+        <GlobalStyles />
         <Content>
           <Box mt={50}>
             <Logo />

@@ -94,7 +94,7 @@ const ButtonStyled = styled.button`
 
 const AnchorComponent = ButtonStyled.withComponent('a');
 
-const AnchorStyled = AnchorComponent.extend`
+const AnchorStyled = styled(AnchorComponent)`
   color: ${props => (props.white ? (props.outline ? 'white' : color.primary.dark) : 'white')};
 
   &:hover {
