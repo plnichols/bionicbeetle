@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import { fetchJson } from '../../utils/fetch';
 import styles from './Services.module.scss';
 import Icon from '../Icon/Icon';
@@ -10,7 +10,7 @@ interface Service {
   description: string;
 }
 
-const Services = () => {
+const Services = (): ReactElement => {
   const [loading, setLoading] = useState<boolean>(true);
   const [services, setServices] = useState<Service[]>([]);
 

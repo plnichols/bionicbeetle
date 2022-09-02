@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from './Heading.module.scss';
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Heading = ({ h1, h2, h3, h4, h5, h6, children }: Props) => {
+const Heading = ({ h1, h2, h3, h4, h5, h6, children }: Props): ReactElement | null => {
   if (h1) {
     return <h1 className={styles.h1}>{children}</h1>;
   }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from './Button.module.scss';
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Button = ({ anchor, children, ...rest }: Props) => {
+const Button = ({ anchor, children, ...rest }: Props): ReactElement => {
   if (anchor) {
     return (
       <a className={styles.button} {...rest}>
