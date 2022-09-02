@@ -1,0 +1,57 @@
+@import '../../styles/breakpoints';
+@import '../../styles/colors';
+
+.ul {
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: $breakpoint-xsmall) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.li {
+  display: flex;
+  margin: 0 0 60px 0;
+  padding: 0;
+
+  @media screen and (min-width: $breakpoint-xsmall) {
+    flex: 1 0 auto;
+    max-width: 45%;
+  }
+}
+
+.icon {
+  margin: 0;
+  padding: 0;
+  font-size: 64px;
+  fill: $grey-dark;
+}
+
+.info {
+  flex: 1;
+  margin-left: 20px;
+  color: $text;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.description {
+  margin: 0.5em 0 0.25em 0;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
