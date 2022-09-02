@@ -36,7 +36,7 @@ const Heading = ({ h1, h2, h3, h4, h5, h6, children }: Props) => {
     return <h6 className={styles.h6}>{children}</h6>;
   }
 
-  return <div className={styles.Heading}>{children}</div>;
+  return null;
 };
 
 export default Heading;
