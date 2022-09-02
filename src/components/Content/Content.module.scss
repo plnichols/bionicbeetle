@@ -1,0 +1,13 @@
+@import '../../styles/breakpoints';
+
+.content {
+  padding: 0 20px;
+
+  @media (min-width: $breakpoint-small) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../styles/colors';
+
+.loader {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: $primary-base;
+  color: $primary-base;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.loader::before,
+.loader::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.loader::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: $primary-base;
+  color: $primary-base;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.loader::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: $primary-base;
+  color: $primary-base;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: $primary-base;
+  }
+  50%,
+  100% {
+    background-color: rgba($primary-lighter, 75%);
+  }
+}

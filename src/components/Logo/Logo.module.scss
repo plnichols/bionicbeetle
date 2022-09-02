@@ -1,0 +1,13 @@
+@import '../../styles/breakpoints';
+
+.logo {
+  text-align: left;
+
+  svg {
+    font-size: 70vw;
+
+    @media (min-width: $breakpoint-small) {
+      font-size: 45rem;
+    }
+  }
+}

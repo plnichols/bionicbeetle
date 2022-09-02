@@ -1,0 +1,23 @@
+@import '../../styles/breakpoints';
+@import '../../styles/colors';
+
+.button {
+  display: inline-block;
+  padding: 8px 30px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $primary-base;
+  border-radius: 4px;
+  border: 1px solid $primary-base;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+  }
+}
