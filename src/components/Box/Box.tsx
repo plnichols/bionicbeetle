@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 interface Props {
   children: React.ReactNode;
@@ -25,7 +25,7 @@ interface StyleObj {
   [key: string]: string;
 }
 
-const Box = ({ children, ...rest }: Props) => {
+const Box = ({ children, ...rest }: Props): ReactElement => {
   let styleObj: StyleObj = {};
 
   // prettier-ignore

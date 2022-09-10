@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from './Logo.module.scss';
 import Icon from '../../components/Icon/Icon';
 
-const Logo = () => {
+const Logo = (): ReactElement => {
   return (
     <div className={styles.logo}>
       <Icon type="bionicbeetle" />

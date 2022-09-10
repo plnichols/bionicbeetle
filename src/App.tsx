@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from './App.module.scss';
 import Content from 'components/Content/Content';
 import Box from 'components/Box/Box';
@@ -9,7 +9,7 @@ import Services from 'components/Services/Services';
 import Button from 'components/Button/Button';
 import Footer from 'components/Footer/Footer';
 
-function App() {
+const App = (): ReactElement => {
   return (
     <div className={styles.app}>
       <Content>
@@ -49,6 +49,6 @@ function App() {
       </Content>
     </div>
   );
-}
+};
 
 export default App;

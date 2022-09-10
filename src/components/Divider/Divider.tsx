@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from './Divider.module.scss';
 
 interface Props {
@@ -11,7 +11,7 @@ interface StylesObj {
   marginBottom?: string;
 }
 
-const Divider = ({ top = 80, bottom = 80 }: Props) => {
+const Divider = ({ top = 80, bottom = 80 }: Props): ReactElement => {
   const stylesObj: StylesObj = {
     ...(top && { marginTop: top + 'px' }),
     ...(bottom && { marginBottom: bottom + 'px' }),
